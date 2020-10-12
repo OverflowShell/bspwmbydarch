@@ -132,3 +132,10 @@ root ~
 
 1- copiar el contenido de la carpeta Root/fzf en la carpeta /usr/share/fzf 
 se debe iniciar pcmanfm en modo root o por terminal con sudo.
+
+-------------------------------------------------------------------------------------------------
+Xterm 
+
+xrdb -merge ~/.Xresources
+
+para aplicar cambios hechos o temas de Xresources en xterm
