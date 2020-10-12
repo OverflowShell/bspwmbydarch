@@ -9,10 +9,12 @@
 
 
 #_______________________Atajos Basicos__________________________________
-# terminal/launch menu
-super + {Return,d}
-		{xterm,dmenu_run}
-
+# launch menu
+super + {_,shift +} d
+		{dmenuprog,dmenu_run}
+#Terminal
+super + Return 
+			xterm
 # Menu/Apagado/Reboot/Recargar,bspwm,sxhkd/bloqueodepantalla
 super + BackSpace
 		$HOME/.config/bspwm/scripts/menuapagado
