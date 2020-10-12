@@ -152,4 +152,4 @@ super + shift + m
 #__________________________Utilidades___________________________________
 # Calendario/Clima/Calculadora/Redshift/Bluetooth/*****PDF DE ATAJOS*********
 alt + {F1,F2,F3,F4,F5,F12}
-		{xterm calcurse,setsid xterm  less -Srf "$HOME/.config/weatherreport",xterm bc -l,redshift,blueberry,zathura $HOME/.config/sxhkd/atajos/atajos.pdf}
+		{xterm calcurse,xterm -hold clima,xterm bc -l,redshift,blueberry,zathura $HOME/.config/sxhkd/atajos/atajos.pdf}
