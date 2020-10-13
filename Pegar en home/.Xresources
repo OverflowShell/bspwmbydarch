@@ -35,7 +35,7 @@ xterm*VT100.Translations: #override \
 *.foreground: #dddddd
 *.color0: #000000 
 *.color1: #cc241d 
-*.color2: #FF51DC 
+*.color2: #2CB5C2 
 *.color3: #d79921 
 *.color4: #01b4cb 
 *.color5: #b16286 
