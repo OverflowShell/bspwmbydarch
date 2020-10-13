@@ -11,7 +11,7 @@
 #_______________________Atajos Basicos__________________________________
 # launch menu
 super + {_,shift +} d
-		{dmenuprog,dmenu_run -w 400 -x 10 -y 30}
+		{dmenuprog,dmenu_run -w 400 -x 10 -y 50}
 #Terminal
 super + Return 
 			xterm
