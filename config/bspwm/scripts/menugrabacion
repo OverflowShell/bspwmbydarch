@@ -1,7 +1,8 @@
 #!/bin/sh
 
 prompt() { \
-  choice=$(printf "Screencast\nSolo video\nSolo audio\nWebcam flotante\nGrabar webcam\nDetener grabacion" |dmenu -p "Select recording style: ")
+  choice=$(printf "Screencast\nSolo video\nSolo audio\nWebcam flotante\nGrabar
+webcam\nDetener grabacion" |dmenu -w 400 -x 10 -y 30 -p "Select recording style: ")
   case $choice in 
     "Screencast") screencast;;
     "Solo video") video;;

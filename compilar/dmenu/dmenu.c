@@ -41,6 +41,9 @@ struct item {
 static char text[BUFSIZ] = "";
 static char *embed;
 static int bh, mw, mh;
+static int dmx = 0; /* put dmenu at this x offset */
+static int dmy = 0; /* put dmenu at this y offset (measured from the bottom if topbar is 0) */
+static unsigned int dmw = 0; /* make dmenu this wide */
 static int inputw = 0, promptw, passwd = 0;
 static int lrpad; /* sum of left and right padding */
 static int reject_no_match = 0;
@@ -832,9 +835,9 @@ setup(void)
 				if (INTERSECT(x, y, 1, 1, info[i]))
 					break;
 
-		mw = MIN(MAX(max_textw() + promptw, 100), info[i].width);
-		x = info[i].x_org + ((info[i].width  - mw) / 2);
-		y = info[i].y_org + ((info[i].height - mh) / 2);
+		x = info[i].x_org + dmx;
+		y = info[i].y_org + (topbar ? dmy : info[i].height - mh - dmy);
+		mw = (dmw>0 ? dmw : info[i].width);
 		XFree(info);
 	} else
 #endif
@@ -842,9 +845,9 @@ setup(void)
 		if (!XGetWindowAttributes(dpy, parentwin, &wa))
 			die("could not get embedding window attributes: 0x%lx",
 			    parentwin);
-		mw = MIN(MAX(max_textw() + promptw, 100), wa.width);
-		x = (wa.width  - mw) / 2;
-		y = (wa.height - mh) / 2;
+		x = dmx;
+		y = topbar ? dmy : wa.height - mh - dmy;
+		mw = (dmw>0 ? dmw : wa.width);
 	}
 	inputw = MIN(inputw, mw/3);
 	match();
@@ -859,7 +862,8 @@ setup(void)
 	win = XCreateWindow(dpy, parentwin, x, y, mw, mh, border_width,
 	                    depth, InputOutput, visual,
 	                    CWOverrideRedirect | CWBackPixel | CWColormap |  CWEventMask | CWBorderPixel, &swa);
-	XSetWindowBorder(dpy, win, scheme[SchemeSel][ColBg].pixel);
+	if (border_width)
+		XSetWindowBorder(dpy, win, scheme[SchemeSel][ColBg].pixel);	                   
 	XSetClassHint(dpy, win, &ch);
 
 	/* open input methods */
@@ -886,6 +890,7 @@ static void
 usage(void)
 {
 	fputs("usage: dmenu [-bfiPrv] [-l lines] [-p prompt] [-fn font] [-m monitor]\n"
+	      "             [-h height] [-x xoffset] [-y yoffset] [-w width]\n"
 	      "             [-nb color] [-nf color] [-sb color] [-sf color] [-w windowid]\n", stderr);
 	exit(1);
 }
@@ -903,10 +908,10 @@ read_Xresources(void) {
 		if (XrmGetResource(xdb, "dmenu.font", "*", &type, &xval) == True) /* font or font set */
 			fonts[0] = strdup(xval.addr);
 		if (XrmGetResource(xdb, "dmenu.color0", "*", &type, &xval) == True)  /* normal background color */
-			colors[SchemeNorm][ColBg] = strdup(xval.addr);
-		if (XrmGetResource(xdb, "dmenu.color4", "*", &type, &xval) == True)  /* normal foreground color */
+/*			colors[SchemeNorm][ColBg] = strdup(xval.addr); */
+		if (XrmGetResource(xdb, "dmenu.color7", "*", &type, &xval) == True)  /* normal foreground color */
 			colors[SchemeNorm][ColFg] = strdup(xval.addr);
-		if (XrmGetResource(xdb, "dmenu.color4", "*", &type, &xval) == True)  /* selected background color */
+		if (XrmGetResource(xdb, "dmenu.color2", "*", &type, &xval) == True)  /* selected background color */
 			colors[SchemeSel][ColBg] = strdup(xval.addr);
 		if (XrmGetResource(xdb, "dmenu.color0", "*", &type, &xval) == True)  /* selected foreground color */
 			colors[SchemeSel][ColFg] = strdup(xval.addr);
@@ -942,6 +947,12 @@ main(int argc, char *argv[])
 		/* these options take one argument */
 		else if (!strcmp(argv[i], "-l"))   /* number of lines in vertical list */
 			lines = atoi(argv[++i]);
+		else if (!strcmp(argv[i], "-x"))   /* window x offset */
+			dmx = atoi(argv[++i]);
+		else if (!strcmp(argv[i], "-y"))   /* window y offset (from bottom up if -b) */
+			dmy = atoi(argv[++i]);
+		else if (!strcmp(argv[i], "-w"))   /* make dmenu this wide */
+			dmw = atoi(argv[++i]);			
 		else if (!strcmp(argv[i], "-m"))
 			mon = atoi(argv[++i]);
 		else if (!strcmp(argv[i], "-p"))   /* adds prompt to left of input field */
@@ -958,6 +969,8 @@ main(int argc, char *argv[])
 			colors[SchemeSel][ColFg] = argv[++i];
 		else if (!strcmp(argv[i], "-w"))   /* embedding window id */
 			embed = argv[++i];
+		else if (!strcmp(argv[i], "-bw"))
+			border_width = atoi(argv[++i]); /* border width */
 		else
 			usage();
 

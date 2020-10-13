@@ -11,7 +11,7 @@
 #_______________________Atajos Basicos__________________________________
 # launch menu
 super + {_,shift +} d
-		{dmenuprog,dmenu_run}
+		{dmenuprog,dmenu_run -w 400 -x 10 -y 35}
 #Terminal
 super + Return 
 			xterm
@@ -55,7 +55,7 @@ super + t
 		telegram-desktop
 # Wifi-menu/nmtui
 super + a
-		xterm -e nmtui
+		xterm nmtui
 # Htop
 super + h
 		xterm htop
