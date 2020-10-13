@@ -9,7 +9,7 @@ XTerm*renderFont: true
 XTerm*faceName: xft:Mononoki Nerd Font, \
                 xft:SF Mono:size=9, \
                 xft:SF Mono:style=Medium:size=9   
-XTerm*faceSize: 11
+XTerm*faceSize: 12
 XTerm*utf8: 2
 XTerm*locale: true
 xterm.vt100.translations: #override \n\
