@@ -151,7 +151,25 @@ super + Print
 # Monitor
 super + shift + m
 		lxrandr
-#__________________________Utilidades___________________________________
-# Calendario/Clima/Calculadora/Redshift/Bluetooth/*****PDF DE ATAJOS*********
-alt + {F1,F2,F3,F4,F5,F12}
-		{xterm calcurse,xterm -hold clima,xterm bc -l,redshift,blueberry,zathura $HOME/.config/sxhkd/atajos/atajos.pdf}
+#__________________________Utilidades____________________________________
+#Busqueda Rapida De Archivos Locales
+alt + F1 
+		dmenufind
+# Clima 
+alt + F2
+		xterm -hold clima
+# Calendario
+alt + F3
+		xterm calcurse
+# Bluetooth
+alt + F4
+		blueberry
+# Calculadora
+alt + F5
+		xterm -e bc -lq
+# Redshift
+alt + F6
+		redshift
+# PDF ATAJOS SXHKDRC
+alt + F12
+			zathura $HOME/.config/sxhkd/atajos/atajos.pdf
