@@ -1,8 +1,25 @@
 #!/bin/sh
 
+#DEFINIR ANCHO Y NUMERO DE LINEAS HORIZONTALES
+menu_alto_lineas=10
+menu_ancho=350
+#MEDIDAS DE MONITOR NO TOCAR
+monitor_ancho=$(xrandr | awk '/*/ {print $1}' | cut -c 1-4)
+monitor_alto=$(xrandr | awk '/*/ {print $1}' | cut -c 6-9)
+#ALINEAR A LA DERECHA ARRIBA
+#XX=$(( $monitor_ancho - $menu_ancho -5 ))
+#YY=$(( 25 ))
+#ALINEADO A LA IZQUIERA ARRIBA
+XX=10
+YY=50
+#ALINEADO AL CENTRO
+#menu_alto_pixeles=$(( $menu_alto_lineas * 10 ))
+#menu_mitad_ancho=$(( $menu_ancho / 2 ))
+#XX=$(( $monitor_ancho / 2 - $menu_mitad_ancho ))
+#YY=$(( $monitor_alto / 2 - $menu_alto_pixeles ))
+
 prompt() { \
-  choice=$(printf "Screencast\nSolo video\nSolo audio\nWebcam flotante\nGrabar
-webcam\nDetener grabacion" |dmenu -w 400 -x 10 -y 50 -p "Seleccione forma de grabación: ")
+  choice=$(printf "Screencast\nSolo video\nSolo audio\nWebcam flotante\nGrabar webcam\nDetener grabacion" |dmenu -w $menu_ancho -x $XX -y $YY -p "Seleccione tipo de grabacion: ")
   case $choice in 
     "Screencast") screencast;;
     "Solo video") video;;
@@ -20,10 +37,10 @@ screencast() { \
   -s "$(xdpyinfo | grep dimensions | awk '{print $2;}')" \
   -i "$DISPLAY" \
   -f alsa -i default \
-  -r 30 \
+  -r 60 \
   -c:v h264 -crf 0 -preset ultrafast -c:a aac \
   "$HOME/grabacion-$(date '+%y%m%d-%H%M-%S').mp4" &
-  echo $! > /tmp/recordingpid 
+  echo $! > /tmp/recordingpid
 }
 
 video() { ffmpeg \
@@ -44,7 +61,7 @@ audio() { \
 }
 
 webcamflotante() { \
-  pkill -f /dev/video || mpv --no-osc --no-input-default-bindings --input-conf=/dev/null --geometry=-0-0 --autofit=30%  --title="mpvfloat" /dev/video0 
+  pkill -f /dev/video || mpv --no-osc --no-input-default-bindings --input-conf=/dev/null --geometry=-0-0 --autofit=20%  --title="mpvfloat" /dev/video0 
   echo $! > /tmp/recordingpid
 }
 
