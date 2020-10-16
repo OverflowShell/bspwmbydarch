@@ -29,9 +29,12 @@ super + ctrl + {m,x,y,z}
 super + alt {r,e}
 			{bspc wm -r;dunstify -i ~/.config/bspwm/scripts/arch.png BSPWMRC RECARGADO,pkill -USR1 -x sxhkd;dunstify -i ~/.config/bspwm/scripts/arch.png SXHKDRC RECARGADO}
 #_________________________Apps__________________________________________
-# Pcmanfm/Pcmanfm root
+# ranger/Pcmanfm root
 super + {_,shift +} e
-		{xterm ranger,sudo pcmanfm}
+		{xterm ranger,sudo xterm ranger} 
+# Pcmanfm/pcmanfm root
+super + {_,shift +} r
+		{pcmanfm,sudo pcmanfm}	
 # Browser
 super + w
 		google-chrome-stable
