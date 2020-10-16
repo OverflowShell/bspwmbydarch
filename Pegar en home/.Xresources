@@ -52,6 +52,28 @@ xterm*VT100.Translations: #override \
 *.color256: #000000 
 *.color257: #dddddd 
 
+/* !! darch theme Black: */
+/* *.background: #000000 */
+/* *.foreground: #dddddd */
+/* *.color0: #000000 */
+/* *.color1: #dddddd */
+/* *.color2: #D9170D */
+/* *.color3: #d79921 */
+/* *.color4: #dddddd */
+/* *.color5: #b16286 */
+/* *.color6: #EDEDED */
+/* *.color7: #AAAAAA */
+/* *.color8: #41fff1 */
+/* *.color9: #731030 */
+/* *.color10: #cc241d */
+/* *.color11: #FF5853 */
+/* *.color12: #dddddd */
+/* *.color13: #EBEBEB */
+/* *.color14: #EDEDED */
+/* *.color15: #F4F4F4 */
+/* *.color256: #000000 */
+/* *.color257: #dddddd */
+
 /* !! gruvbox light: */
 /* *.color0: #fbf1c7 */
 /* *.color1: #cc241d */
