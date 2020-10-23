@@ -30,7 +30,7 @@ while read -r line ; do
 			wifi=""
 			else
 			red_icono="%{F$COLOR_NORED}%{A:st -e nmtui:}%{A}" 	  
-			ssid="No Internet (T_)"
+			ssid="No Internet (T_T)"
 			wifi=""
 			fi
 			;;
