@@ -10,8 +10,11 @@
     padding = 10
     horizontal_padding = 10
     frame_width = 3
+# Bordes De Notificaciones
+# 1- colorfull 2- darkmode 3-dracula 
 #   frame_color = "#FF51DC"
-  	frame_color = "#dddddd"
+#  	frame_color = "#dddddd"
+	frame_color = "#FF79C6"
 	
     # Define a color for the separator.
     # possible values are:
@@ -84,9 +87,12 @@
 
 [urgency_normal]
     background = "#181818"
+# Letra de Notificaciones
+# 1- colorfull 2- darkmode 3-dracula     
 #    foreground = "#FFFF00"
-    foreground = "#CFC7C4"
-    timeout = 5
+#    foreground = "#CFC7C4"
+	 foreground = "#FFFF00"
+     timeout = 5
 
 [urgency_critical]
     background = "#181818"
