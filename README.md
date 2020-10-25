@@ -9,6 +9,7 @@ Bspwm Pink-Dark by darch7
 
 
  
+ 
  ![ViernesDeEscritorio](https://user-images.githubusercontent.com/70046164/97097677-33602380-1652-11eb-848e-d79a3435370e.png
 
 
