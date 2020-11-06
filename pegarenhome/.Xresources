@@ -33,7 +33,7 @@ xterm*VT100.Translations: #override \
 /* !! darch theme colors: */
 /* *.background: #000000 */
 /* *.foreground: #dddddd */
-/* *.color0: #000000 */
+/* *.color0: #2E2A26 */
 /* *.color1: #cc241d */
 /* *.color2: #2CB5C2 */
 /* *.color3: #d79921 */
