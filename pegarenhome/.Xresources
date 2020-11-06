@@ -56,7 +56,7 @@ xterm*VT100.Translations: #override \
 /* !! darch theme Black: */
  *.background: #000000 
  *.foreground: #dddddd
- *.color0: #000000 
+ *.color0: #2E2A26 
  *.color1: #dddddd 
  *.color2: #FF1100 
  *.color3: #d79921 
@@ -175,7 +175,7 @@ xterm*VT100.Translations: #override \
 /* ! Dracula Xresources palette */
 /* *.foreground: #F8F8F2 */
 /* *.background: #0F1014 */
-/* *.color0:     #000000 */
+/* *.color0:     #2E2A26 */
 /* *.color8:     #4D4D4D */
 /* *.color1:     #FF5555 */
 /* *.color9:     #FF6E67 */
