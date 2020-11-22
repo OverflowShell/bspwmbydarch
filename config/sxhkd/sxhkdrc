@@ -13,8 +13,8 @@
 super + {_,shift +} d
 		{dmenuprog,dmenu_run -w 300 -x 10 -y 50}
 #Terminal
-super + Return 
-			xterm
+super + {_,shift +} Return
+		{xterm,xterm -e tmux} 
 # Menu/Apagado/Reboot/Recargar,bspwm,sxhkd/bloqueodepantalla
 super + BackSpace
 		$HOME/.config/bspwm/scripts/menuapagado
