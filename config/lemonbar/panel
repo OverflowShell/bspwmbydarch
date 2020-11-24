@@ -18,7 +18,7 @@ FUENTE_BAR="Source Han Sans JP:Bold:size=10"
 FUENTE_ICONOS="Font Awesome 5 Free:style=Solid:size=11"
 FUENTE_ICONOS2="Font Awesome:style=Solid:size=11"
 FUENTE_ICONOS3="JoyPixels:style=Regular:size=9"
-#BAR_POSICION="1200x25+80+5"
+BAR_POSICION="1330x25+16+5"
 
 if xdo id -a "$PANEL_WM_NAME" > /dev/null ; then
 printf "%s\n" "The panel is already running." >&2
