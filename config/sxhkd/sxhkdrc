@@ -10,8 +10,8 @@
 
 #_______________________Atajos Basicos__________________________________
 # launch menu
-super + d
-		dmenu_run -w 300 -x 10 -y 50
+super + {_,shift +} d
+		{programas,dmenu_run -w 300 -x 10 -y 50}
 #Terminal
 super + {_,shift +} Return
 		{xterm,xterm -e tmux} 
