@@ -1,6 +1,6 @@
 Bspwm Pink-Dark by darch7 
 
-![bspwmbydarch](https://user-images.githubusercontent.com/70046164/95531049-f808f800-09b5-11eb-87a3-a848a19566f5.png)
+
 
 
 
