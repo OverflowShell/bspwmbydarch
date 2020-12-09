@@ -139,3 +139,13 @@ Xterm
 xrdb -merge ~/.Xresources
 
 para aplicar cambios hechos o temas de Xresources en xterm
+
+------------------------------------------------------------------------------------------------
+
+* Lightdm 
+
+pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings 
+
+sudo systemctl enable lightdm 
+
+*Nota para poner imagen a lightdm el wallpeaper tiene que estar en directorio root ej /usr/share/wall.
