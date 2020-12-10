@@ -160,7 +160,7 @@ alt + F1
 		dmenufind
 # Clima 
 alt + F2
-	    setsid st -e less -Srf "$HOME/.config/weatherreport"
+	  st -e clima
 # Calendario
 alt + F3
 		st -e calcurse
