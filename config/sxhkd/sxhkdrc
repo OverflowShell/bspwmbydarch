@@ -160,7 +160,7 @@ alt + F1
 		dmenufind
 # Clima 
 alt + F2
-	  st -e clima
+	  st -e sh -c 'clima ; $SHELL'
 # Calendario
 alt + F3
 		st -e calcurse
