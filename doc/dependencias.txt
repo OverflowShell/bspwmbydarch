@@ -10,7 +10,9 @@
 compilar dmenu
 
 cd dmenu
-sudo make clean install
+sudo make install
+cd st
+sudo make install
 
 ----------------------------------------------------
 
@@ -58,16 +60,14 @@ sudo chmod +777 ~/.config/bspwm/scripts
 
 1- para vim : wget https://archive.archlinux.org/packages/m/msgpack-c/msgpack-c-3.3.0-1-x86_64.pkg.tar.zst && sudo pacman -U msgpack-c-3.3.0-1-x86_64.pkg.tar.zst
 
-2- sudo pacman -S polkit-gnome xterm ueberzug slock fzf wireless_tools redshift telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels --noconfirm
+2- sudo pacman -S polkit-gnome ueberzug slock fzf wireless_tools redshift telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels --noconfirm
 
 
 
 ---------------------------------------------------------------
 LEMONBAR DEPENDENCIAS
 --------------------------------------------------------------
-git clone https://github.com/baskerville/xdo.git
-git clone https://github.com/baskerville/sutils.git
-git clone https://github.com/baskerville/xtitle.git
+git clone https://github.com/baskerville/xdo.git && git clone https://github.com/baskerville/sutils.git && git clone https://github.com/baskerville/xtitle.git 
 
 
 1- make
@@ -133,12 +133,6 @@ root ~
 1- copiar el contenido de la carpeta Root/fzf en la carpeta /usr/share/fzf 
 se debe iniciar pcmanfm en modo root o por terminal con sudo.
 
--------------------------------------------------------------------------------------------------
-Xterm 
-
-xrdb -merge ~/.Xresources
-
-para aplicar cambios hechos o temas de Xresources en xterm
 
 ------------------------------------------------------------------------------------------------
 

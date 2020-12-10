@@ -14,7 +14,7 @@ super + {_,shift +} d
 		{programas,dmenu_run -w 300 -x 10 -y 50}
 #Terminal
 super + {_,shift +} Return
-		{xterm,xterm -e tmux} 
+		{st,st -e tmux} 
 # Menu/Apagado/Reboot/Recargar,bspwm,sxhkd/bloqueodepantalla
 super + BackSpace
 		$HOME/.config/bspwm/scripts/menuapagado
@@ -29,9 +29,9 @@ super + ctrl + {m,x,y,z}
 super + alt {r,e}
 			{bspc wm -r;dunstify -i ~/.config/bspwm/scripts/arch.png BSPWMRC RECARGADO,pkill -USR1 -x sxhkd;dunstify -i ~/.config/bspwm/scripts/arch.png SXHKDRC RECARGADO}
 #_________________________Apps__________________________________________
-# ranger/Pcmanfm root
+# ranger/ranger root
 super + {_,shift +} e
-		{xterm ranger,sudo xterm ranger} 
+		{st -e ranger,sudo st -e ranger} 
 # Pcmanfm/pcmanfm root
 super + {_,shift +} r
 		{pcmanfm,sudo pcmanfm}	
@@ -58,16 +58,16 @@ super + t
 		telegram-desktop
 # Wifi-menu/nmtui
 super + a
-		xterm nmtui
+		st -e nmtui
 # Htop
 super + h
-		xterm htop
+		st -e htop
 # Qemu the best VM
 super + k
 		sudo virt-manager
 # Nvim
 super + shift + n
- 		xterm nvim
+ 		st -e nvim
 #____________________Manejos de ventanas_________________________________
 # rotar ventanas 90°/ventana flotante/fijar ventana/
 super + {o,s,i}
@@ -160,16 +160,16 @@ alt + F1
 		dmenufind
 # Clima 
 alt + F2
-		xterm -hold clima
+	    setsid st -e less -Srf "$HOME/.config/weatherreport"
 # Calendario
 alt + F3
-		xterm calcurse
+		st -e calcurse
 # Bluetooth
 alt + F4
 		blueberry
 # Calculadora
 alt + F5
-		xterm -e bc -lq
+		st -e bc -lq
 # Redshift
 alt + F6
 		redshift
