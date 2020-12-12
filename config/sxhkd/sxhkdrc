@@ -14,7 +14,7 @@ super + {_,shift +} d
 		{programas,dmenu_run -w 300 -x 10 -y 50}
 #Terminal
 super + {_,shift +} Return
-		{st,st -e tmux} 
+		{xterm,xterm tmux} 
 # Menu/Apagado/Reboot/Recargar,bspwm,sxhkd/bloqueodepantalla
 super + BackSpace
 		$HOME/.config/bspwm/scripts/menuapagado
@@ -31,7 +31,7 @@ super + alt {r,e}
 #_________________________Apps__________________________________________
 # ranger/ranger root
 super + {_,shift +} e
-		{st -e ranger,sudo st -e ranger} 
+		{xterm ranger,sudo xterm ranger} 
 # Pcmanfm/pcmanfm root
 super + {_,shift +} r
 		{pcmanfm,sudo pcmanfm}	
@@ -58,16 +58,16 @@ super + t
 		telegram-desktop
 # Wifi-menu/nmtui
 super + a
-		st -e nmtui
+		xterm nmtui
 # Htop
 super + h
-		st -e htop
+		xterm htop
 # Qemu the best VM
 super + k
 		sudo virt-manager
 # Nvim
 super + shift + n
- 		st -e nvim
+ 		xterm nvim
 #____________________Manejos de ventanas_________________________________
 # rotar ventanas 90°/ventana flotante/fijar ventana/
 super + {o,s,i}
@@ -160,16 +160,16 @@ alt + F1
 		dmenufind
 # Clima 
 alt + F2
-	  st -e sh -c 'clima ; $SHELL'
+	 xterm -hold clima
 # Calendario
 alt + F3
-		st -e calcurse
+		xterm calcurse
 # Bluetooth
 alt + F4
 		blueberry
 # Calculadora
 alt + F5
-		st -e bc -lq
+		xterm -e bc -lq
 # Redshift
 alt + F6
 		redshift
