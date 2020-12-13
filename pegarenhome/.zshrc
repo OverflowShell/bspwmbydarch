@@ -81,3 +81,7 @@ bindkey '^e' edit-command-line
 [[ ! -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]] || source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
 [[ ! -f /usr/share/fzf/completion-ia.zsh ]] || source /usr/share/fzf/completion-ia.zsh
+
+# nmtui 
+
+alias nmtui="xdotool getactivewindow set_window --class nmtui ; nmtui ; xdotool getactivewindow set_window --class XTerm"   

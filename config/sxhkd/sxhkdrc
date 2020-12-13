@@ -58,7 +58,7 @@ super + t
 		telegram-desktop
 # Wifi-menu/nmtui
 super + a
-		xterm nmtui
+		xterm wifi-menu
 # Htop
 super + h
 		xterm htop
