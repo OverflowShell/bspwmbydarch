@@ -32,7 +32,7 @@ xterm*VT100.Translations: #override \
 
 /* !! darch theme colors: */
  *.background: #000000 
- *.foreground: #dddddd 
+ *.foreground: #ebdbb2 
  *.color0: #2E2A26 
  *.color1: #cc241d 
  *.color2: #2CB5C2 
@@ -40,22 +40,22 @@ xterm*VT100.Translations: #override \
  *.color4: #01b4cb 
  *.color5: #b16286 
  *.color6: #41fff1 
- *.color7: #a89984 
- *.color8: #928374
+ *.color7: #ebdbb2
+ *.color8: #ebdbb2
  *.color9: #fb4934 
  *.color10: #FF51DC 
  *.color11: #3f9080 
  *.color12: #01B4CB 
  *.color13: #d3869b  
  *.color14: #d3869b 
- *.color15: #dddddd 
- *.color256: #000000 
- *.color257: #dddddd 
+ *.color15: #ebdbb2 
+ *.color256: #000000  
+ *.color257: #ebdbb2 
 
 
 /* !! darch theme Black: */
 /* *.background: #000000 */  
-/* *.foreground: #dddddd */
+/* *.foreground: #ebdbb2 */
 /* *.color0: #2E2A26  */
 /* *.color1: #dddddd */
 /* *.color2: #FF1100 */
@@ -63,7 +63,7 @@ xterm*VT100.Translations: #override \
 /* *.color4: #dddddd */
 /* *.color5: #b16286 */
 /* *.color6: #EDEDED */
-/* *.color7: #AAAAAA */
+/* *.color7: #ebdbb2 */
 /* *.color8: #41fff1 */
 /* *.color9: #731030  */
 /* *.color10: #cc241d */
