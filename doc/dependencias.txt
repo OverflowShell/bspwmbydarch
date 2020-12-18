@@ -51,16 +51,11 @@ sudo chmod +777 ~/.config/bspwm/scripts
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
-1- yay -S nerd-fonts-mononoki pamac-aur-git  adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome google-chrome picom-ibhagwan-git lemonbar-xft-git fzf-extras --noconfirm
+1- yay -S nerd-fonts-mononoki picom-ibhagwan-git lemonbar-xft-git fzf-extras --noconfirm
 
 ------------------------------------------------------------------------
 
-
-
-1- para vim : wget https://archive.archlinux.org/packages/m/msgpack-c/msgpack-c-3.3.0-1-x86_64.pkg.tar.zst && sudo pacman -U msgpack-c-3.3.0-1-x86_64.pkg.tar.zst
-
-2- sudo pacman -S xterm wmname polkit-gnome ueberzug slock fzf wireless_tools redshift telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels --noconfirm
-
+2- sudo pacman -S xterm wmname polkit-gnome ueberzug slock fzf wireless_tools redshift telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome chromium --noconfirm
 
 
 ---------------------------------------------------------------
@@ -142,3 +137,9 @@ pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 sudo systemctl enable lightdm 
 
 *Nota para poner imagen a lightdm el wallpeaper tiene que estar en directorio root ej /usr/share/wall.
+
+--------------------------------------------------------------------------------------------------
+
+* Aplicar cambios en xterm (temas)
+
+xrdb -merge ~/.Xresources

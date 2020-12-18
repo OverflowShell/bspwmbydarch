@@ -37,7 +37,7 @@ super + {_,shift +} r
 		{pcmanfm,sudo pcmanfm}	
 # Browser
 super + w
-		google-chrome-stable
+		chromium
 # Pavucontrol
 super + v
 		pavucontrol
