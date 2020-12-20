@@ -8,10 +8,13 @@
 1- entrar en la carpeta compilar.
 
 compilar dmenu
+compilar st
 
 cd dmenu
 sudo make install
 
+cd st
+sudo make install
 
 ----------------------------------------------------
 
@@ -51,11 +54,11 @@ sudo chmod +777 ~/.config/bspwm/scripts
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
-1- yay -S nerd-fonts-mononoki picom-ibhagwan-git lemonbar-xft-git fzf-extras --noconfirm
+1- yay -S ttf-meslo-nerd-font-powerlevel10k picom-ibhagwan-git lemonbar-xft-git fzf-extras --noconfirm
 
 ------------------------------------------------------------------------
 
-2- sudo pacman -S xterm wmname polkit-gnome ueberzug slock fzf wireless_tools redshift telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome chromium --noconfirm
+2- sudo pacman -S wmname polkit-gnome ueberzug slock fzf wireless_tools redshift telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome chromium --noconfirm
 
 
 ---------------------------------------------------------------
@@ -140,6 +143,19 @@ sudo systemctl enable lightdm
 
 --------------------------------------------------------------------------------------------------
 
-* Aplicar cambios en xterm (temas)
+* Aplicar cambios en st (temas)
 
 xrdb -merge ~/.Xresources
+
+---------------------------------------------------------------------------------------------------
+
+* Instalar tema powerlevel10k 
+
+sudo pacman -S zsh-theme-powerlevel10k
+
+echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
+
+confuigurar 
+
+p10k configure
+----------------------------------------------------------------------------------------------------
