@@ -11,14 +11,14 @@
 #_______________________Atajos Basicos__________________________________
 # launch menu
 super + {_,shift +} d
-		{programas,dmenu_run -w 300 -x 10 -y 50}
+		rofi -modi drun -show drun -width 22
 #Terminal
 super + {_,shift +} Return
 		{st,st -e tmux} 
 # Menu/Apagado/Reboot/Recargar,bspwm,sxhkd/bloqueodepantalla
 super + BackSpace
 		$HOME/.config/bspwm/scripts/menuapagado
-# Cerrar apps
+# Cerrar apps<
 super + q
 		bspc node -{c,k}
 
@@ -31,10 +31,10 @@ super + alt {r,e}
 #_________________________Apps__________________________________________
 # ranger/ranger root
 super + {_,shift +} e
-		{st -e ranger,sudo st -e ranger} 
+		{st -e ranger,$(pkexec st -e ranger)} 
 # Pcmanfm/pcmanfm root
 super + {_,shift +} r
-		{pcmanfm,sudo pcmanfm}	
+		{pcmanfm,$(pkexec pcmanfm)}	
 # Browser
 super + w
 		chromium
@@ -153,25 +153,23 @@ super + Print
 		$HOME/.config/bspwm/scripts/menugrabacion
 # Monitor
 super + shift + m
-		monitor
+		lxrandr
 #__________________________Utilidades____________________________________
 #Busqueda Rapida De Archivos Locales
-alt + F1 
-		dmenufind
 # Clima 
-alt + F2
+alt + F1
 	 st -e sh -c 'clima ; $SHELL'
 # Calendario
-alt + F3
+alt + F2
 		st -e calcurse
 # Bluetooth
-alt + F4
+alt + F3
 		blueberry
 # Calculadora
-alt + F5
+alt + F4
 		st -e bc -lq
 # Redshift
-alt + F6
+alt + F5
 		redshift
 # PDF ATAJOS SXHKDRC
 alt + F12

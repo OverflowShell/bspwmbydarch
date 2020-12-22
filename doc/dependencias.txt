@@ -7,11 +7,7 @@
 
 1- entrar en la carpeta compilar.
 
-compilar dmenu
-compilar st
-
-cd dmenu
-sudo make install
+compilar terminal st
 
 cd st
 sudo make install
@@ -58,7 +54,7 @@ sudo chmod +777 ~/.config/bspwm/scripts
 
 ------------------------------------------------------------------------
 
-2- sudo pacman -S wmname polkit-gnome ueberzug slock fzf wireless_tools redshift telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome chromium --noconfirm
+2- sudo pacman -S wmname lxrandr polkit-gnome ueberzug slock fzf wireless_tools redshift telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome chromium --noconfirm
 
 
 ---------------------------------------------------------------
@@ -145,9 +141,14 @@ sudo systemctl enable lightdm
 
 * Aplicar cambios en st (temas)
 
-xrdb -merge ~/.Xresources
+escribir en terminal 
+
+temas 
+
+se aplicaran los cambios de xresources donde estan alojados todos los temas
 
 ---------------------------------------------------------------------------------------------------
+(OPCIONAL) 
 
 * Instalar tema powerlevel10k 
 
