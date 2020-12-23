@@ -16,7 +16,7 @@ export SUDO_ASKPASS="$HOME/.config/bspwm/scripts/pass"
 export PATH="${PATH}:$HOME/.config/lemonbar"
 export PATH="${PATH}:$HOME/.config/bspwm/scripts"
 export EDITOR=nvim
-resoluciones > /tmp/resoluciones &
+export TERMINAL=st
 pkill -9 panel
 panel &
 picom &
