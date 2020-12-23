@@ -11,7 +11,7 @@
 #_______________________Atajos Basicos__________________________________
 # launch menu
 super + {_,shift +} d
-		rofi -modi drun -show drun -width 22
+		{rofi -modi drun -show drun -width 22,pass rofi_root}
 #Terminal
 super + {_,shift +} Return
 		{st,st -e tmux} 
@@ -31,10 +31,10 @@ super + alt {r,e}
 #_________________________Apps__________________________________________
 # ranger/ranger root
 super + {_,shift +} e
-		{st -e ranger,$(pkexec st -e ranger)} 
+		{st -e ranger,sudo -A st -e ranger} 
 # Pcmanfm/pcmanfm root
 super + {_,shift +} r
-		{pcmanfm,$(pkexec pcmanfm)}	
+		{pcmanfm,sudo -A pcmanfm}	
 # Browser
 super + w
 		chromium
@@ -58,7 +58,7 @@ super + t
 		telegram-desktop
 # Wifi-menu/nmtui
 super + a
-		st -e wifi-menu
+		$HOME/Descargas/wifi
 # Htop
 super + h
 		st -e htop
