@@ -1,14 +1,14 @@
 #!/bin/sh
 
 prompt() { \
-  choice=$(printf "   Screencast\n  Solo video\n Solo audio\n Webcam flotante\n  Grabar webcam\n Detener grabacion" | rofi -p "  Seleccione tipo de grabacion " -dmenu -lines 6 -width 20)
+  choice=$(printf "   Screencast\n  Solo video\n  Solo audio\n  Webcam flotante\n   Grabar webcam\n  Detener grabacion" | rofi -p "  Seleccione tipo de grabacion " -dmenu -lines 6 -width 20)
   case $choice in 
-    "   Screencast") screencast;;
-    "  Solo video") video;;
-    " Solo audio") audio;;
-    " Webcam flotante") webcamflotante;;
-    "  Grabar webcam") webcam;;
-    " Detener grabacion") detener;;
+    *"Screencast") screencast;;
+    *"Solo video") video;;
+    *"Solo audio") audio;;
+    *"Webcam flotante") webcamflotante;;
+    *"Grabar webcam") webcam;;
+    *"Detener grabacion") detener;;
   esac
 }
 
@@ -61,11 +61,11 @@ detener() { \
 }
 
 case "$1" in 
-  "   Screencast") screencast;;
-  "  Solo video") video;;
-  " Solo audio") audio;;
-  " Webcam flotante") webcamflotante;;
-  "  Grabar webcam") webcam;;
-  " Detener grabacion") detener;;
+  *"Screencast") screencast;;
+  *"Solo video") video;;
+  *"Solo audio") audio;;
+  *"Webcam flotante") webcamflotante;;
+  *"Grabar webcam") webcam;;
+  *"Detener grabacion") detener;;
   *)  ([ -f /tmp/recording_pid ] && exit 1) || prompt;;
 esac
