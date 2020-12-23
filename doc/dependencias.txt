@@ -54,7 +54,7 @@ chmod -R +x ~/.config/bspwm/scripts
 
 ------------------------------------------------------------------------
 
-2- sudo pacman -S wmname lxrandr polkit-gnome ueberzug slock fzf wireless_tools redshift telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome chromium --noconfirm
+2- sudo pacman -S wmname rofi lxrandr polkit-gnome ueberzug slock fzf wireless_tools redshift telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome chromium --noconfirm
 
 
 ---------------------------------------------------------------
@@ -119,6 +119,9 @@ Mega pack de arch (codecs de multimedia y para que el sistema reconozca todo tip
 
 1- sudo pacman -S android-file-transfer android-tools android-udev msmtp libmtp libcddb gvfs gvfs-afc gvfs-smb gvfs-gphoto2 gvfs-mtp gvfs-goa gvfs-nfs gvfs-google dosfstools jfsutils f2fs-tools btrfs-progs exfat-utils ntfs-3g reiserfsprogs udftools xfsprogs nilfs-utils polkit gpart mtools ffmpeg aom libde265 x265 x264 libmpeg2 xvidcore libtheora libvpx schroedinger sdl gstreamer gst-plugins-bad gst-plugins-base gst-plugins-base-libs gst-plugins-good gst-plugins-ugly xine-lib libdvdcss libdvdread dvd+rw-tools lame --noconfirm
 
+# aceleracion grafica para intel 
+
+2- sudo pacman -S xf86-video-intel vulkan-intel mesa lib32-mesa intel-media-driver libva-intel-driver libva-vdpau-driver libvdpau-va-gl libva-utils vdpauinfo intel-compute-runtime clinfo ocl-icd lib32-ocl-icd opencl-headers --needed --noconfirm
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 root ~
@@ -131,7 +134,7 @@ se debe iniciar pcmanfm en modo root o por terminal con sudo.
 
 * Lightdm 
 
-pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings 
+sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings 
 
 sudo systemctl enable lightdm 
 
