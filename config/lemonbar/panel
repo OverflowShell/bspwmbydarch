@@ -51,7 +51,7 @@ sleep 5
 done > "$PANEL_FIFO" &
 
 #BARRA DE TITULOS
-xtitle -sf 'T%s\n' -t25 > "$PANEL_FIFO" &
+xtitle -sf 'T%s\n' -t20 > "$PANEL_FIFO" &
 
 #TEMPERATURA
 temp -sf'X%.1f' -n0 > "$PANEL_FIFO" &
