@@ -58,7 +58,7 @@ super + t
 		telegram-desktop
 # Wifi-menu/nmtui
 super + a
-		$HOME/Descargas/wifi
+		st -e nmtui
 # Htop
 super + h
 		st -e htop
