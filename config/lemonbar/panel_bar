@@ -18,19 +18,19 @@ while read -r line ; do
 	case $line in
 		N*)
 			# CONEXIONES
-			if [ ${line#??} == "wlp3s0" ]
+			if [ ${line#??} == "wlan0" ]
 			then
 			red_icono="%{F$COLOR_RED_FG}%{A:st -e nmtui:}%{A}"
-			ssid=$(iwgetid -r)
+#			ssid=$(iwgetid -r)
 			wifi=$(cat /proc/net/wireless | awk 'NR==3 {printf "%0.0f%%\n", $3/70*100}')
 			elif [[ ${line#??} =~ "enp0s25" ]]
 			then
 			red_icono="%{F$COLOR_ETHERNET}%{A:st -e nmtui:}%{A}" 
-			ssid="Cableado"
+#			ssid="Cableado"
 			wifi=""
 			else
 			red_icono="%{F$COLOR_NORED}%{A:st -e nmtui:}%{A}" 	  
-			ssid="No Internet (T_T)"
+#			ssid="No Internet (T_T)"
 			wifi=""
 			fi
 			;;
