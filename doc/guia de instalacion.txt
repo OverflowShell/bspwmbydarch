@@ -17,6 +17,7 @@
 
 6- cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 
+7- cd 
 
 ----------------------------------------------------------------------------------------------------------
 
@@ -29,10 +30,7 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------
 * instalar yay! 
 
-1- git clone https://aur.archlinux.org/yay-bin.git 
-2- cd yay-bin/
-3- makepkg -si
-
+1- git clone https://aur.archlinux.org/yay.git ;cd yay ;makepkg -si ;cd ;rm -rf yay
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
