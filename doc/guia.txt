@@ -5,42 +5,20 @@
 ***** DOY POR HECHO QUE YA TIENES BSPWM INSTALADO PARA SABER COMO SE INSTALA BSPWM PUEDES CHECAR TU MISMO ******
 
 
-1- entrar en la carpeta compilar.
+1- cd bspwmbydarch/compilar/st
 
-compilar terminal st
+2- sudo make install
 
-cd st
-sudo make install
+3- cp -R bspwmbydarch/config/* ~/.config/
 
-----------------------------------------------------
+4- sudo chmod u+x ~/.config/bspwm/scripts
 
-2- entrar a la carpeta config
- y copiar en TU .config estas carpetas
+5- mkdir -p ~/.local/share/fonts 
 
- dunst, lemonbar, nvim, picom, redshift,sxhkdrc,etc 
-
-----------------------------------------------------
+6- cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
 
 
-3- entrar la carpeta bspwm que descargaste y copiar el contenido de el bspwmrc en TU bspwmrc que se encuentra en .config/bspwm/bspwmrc
-
-
--------------------------------------------------------
-
-
-4- copiar los scripts que estan en la carpeta donde descargaste.
-dentro de la carpeta bspwm/scripts
-
-copiar la carpeta entera y pegar dentro de TU carpeta bspwm en
-.config/bspwm/scripts
-
-luego darle permisos
-
-chmod -R +x ~/.config/bspwm/scripts
-
-------------------------------------------------------------------
-
-
+----------------------------------------------------------------------------------------------------------
 
 
 #####################################################################################
@@ -62,7 +40,7 @@ chmod -R +x ~/.config/bspwm/scripts
 
 ------------------------------------------------------------------------
 
-2- sudo pacman -S p7zip unrar zip unzip gzip bzip2 arj lzop alsa-plugins alsa-utils ttf-dejavu ttf-liberation xorg-fonts-type1 ttf-bitstream-vera wmname rofi lxrandr polkit-gnome ueberzug slock fzf wireless_tools redshift telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome chromium --needed --noconfirm
+2- sudo pacman -S papirus-icon-theme p7zip unrar zip unzip gzip bzip2 arj lzop alsa-plugins alsa-utils ttf-dejavu ttf-liberation xorg-fonts-type1 ttf-bitstream-vera wmname rofi lxrandr polkit-gnome ueberzug slock fzf wireless_tools redshift telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome chromium --needed --noconfirm
 
 
 ---------------------------------------------------------------
@@ -70,6 +48,7 @@ LEMONBAR DEPENDENCIAS
 --------------------------------------------------------------
 git clone https://github.com/baskerville/xdo.git && git clone https://github.com/baskerville/sutils.git && git clone https://github.com/baskerville/xtitle.git 
 
+a los 3 (xdo,sutils,xtitle) a cada uno el paso 1 y 2 
 
 1- make
 2- sudo make install
@@ -120,21 +99,8 @@ instalar spotify + adblock
 11- sudo make install
 
 
---------------------------------------------------------------------------------------------------------------
-Mega pack de arch (codecs de multimedia y para que el sistema reconozca todo tipo de formato de particiones)
-
-INSTALAR SI NO USASTE DARCH INSTALL
-----------------------------------------------------------------------------------------------------------------
-
-
-1- sudo pacman -S android-file-transfer android-tools android-udev msmtp libmtp libcddb gvfs gvfs-afc gvfs-smb gvfs-gphoto2 gvfs-mtp gvfs-goa gvfs-nfs gvfs-google dosfstools jfsutils f2fs-tools btrfs-progs exfat-utils ntfs-3g reiserfsprogs udftools xfsprogs nilfs-utils polkit gpart mtools ffmpeg aom libde265 x265 x264 libmpeg2 xvidcore libtheora libvpx schroedinger sdl gstreamer gst-plugins-bad gst-plugins-base gst-plugins-base-libs gst-plugins-good gst-plugins-ugly xine-lib libdvdcss libdvdread dvd+rw-tools lame --needed --noconfirm
-
-# aceleracion grafica para intel 
-
-2- sudo pacman -S xf86-video-intel vulkan-intel mesa lib32-mesa intel-media-driver libva-intel-driver libva-vdpau-driver libvdpau-va-gl libva-utils vdpauinfo intel-compute-runtime clinfo ocl-icd lib32-ocl-icd opencl-headers --needed --noconfirm
-
 --------------------------------------------------------------------------------------------------------------------------------------------------
-root ~
+########## root ~ fzf personalizacion y configuracion 
 
 1- copiar el contenido de la carpeta Root/fzf en la carpeta /usr/share/fzf 
 se debe iniciar pcmanfm en modo root o por terminal con sudo.
@@ -142,7 +108,7 @@ se debe iniciar pcmanfm en modo root o por terminal con sudo.
 
 ------------------------------------------------------------------------------------------------
 
-* Lightdm 
+######### instalacion y configuracion Lightdm 
 
 sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings 
 
@@ -152,7 +118,7 @@ sudo systemctl enable lightdm
 
 --------------------------------------------------------------------------------------------------
 
-* Aplicar cambios en st (temas)
+######## Aplicar cambios en st (temas)
 
 escribir en terminal 
 
@@ -163,7 +129,7 @@ se aplicaran los cambios de xresources donde estan alojados todos los temas
 ---------------------------------------------------------------------------------------------------
 (OPCIONAL) 
 
-* Instalar tema powerlevel10k 
+##### Instalar tema powerlevel10k 
 
 sudo pacman -S zsh-theme-powerlevel10k
 
@@ -172,4 +138,27 @@ echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zs
 confuigurar 
 
 p10k configure
-----------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+#################### SI NO USASTE DARCH INSTALL #######################      EXTRAS
+
+
+--------------------------------------------------------------------------------------------------------------
+Mega pack de arch (codecs de multimedia y para que el sistema reconozca todo tipo de formato de particiones)
+
+----------------------------------------------------------------------------------------------------------------
+
+1- sudo pacman -S android-file-transfer android-tools android-udev msmtp libmtp libcddb gvfs gvfs-afc gvfs-smb gvfs-gphoto2 gvfs-mtp gvfs-goa gvfs-nfs gvfs-google dosfstools jfsutils f2fs-tools btrfs-progs exfat-utils ntfs-3g reiserfsprogs udftools xfsprogs nilfs-utils polkit gpart mtools ffmpeg aom libde265 x265 x264 libmpeg2 xvidcore libtheora libvpx schroedinger sdl gstreamer gst-plugins-bad gst-plugins-base gst-plugins-base-libs gst-plugins-good gst-plugins-ugly xine-lib libdvdcss libdvdread dvd+rw-tools lame --needed --noconfirm
+
+# aceleracion grafica para intel 
+
+2- sudo pacman -S xf86-video-intel vulkan-intel mesa lib32-mesa intel-media-driver libva-intel-driver libva-vdpau-driver libvdpau-va-gl libva-utils vdpauinfo intel-compute-runtime clinfo ocl-icd lib32-ocl-icd opencl-headers --needed --noconfirm
