@@ -1,4 +1,4 @@
-Bspwm by darch7 (Pink-Dark, Black theme, Dracula theme) 
+Bspwm by scissors7 (Pink-Dark, Black theme, Dracula theme) 
 
 ![4](https://user-images.githubusercontent.com/70046164/100247153-c7a2fc00-2f18-11eb-8ef4-9accac3a6ffc.png)
 
