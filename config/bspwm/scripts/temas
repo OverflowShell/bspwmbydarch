@@ -1,3 +1,0 @@
-#!/bin/bash
-xrdb -merge ~/.Xresources                                 
-sed -i "/selected-active-background:/ cselected-active-background: $(xrdb -query | grep '.color12:' | awk '{print $NF}');" $HOME/.config/rofi/themes-rofi.rasi 

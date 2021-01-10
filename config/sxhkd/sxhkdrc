@@ -17,7 +17,7 @@ super + {_,shift +} Return
 		{st,st -e tmux} 
 # Menu/Apagado/Reboot/Recargar,bspwm,sxhkd/bloqueodepantalla
 super + BackSpace
-		$HOME/.config/bspwm/scripts/menuapagado
+		$HOME/.local/bin/scripts/menuapagado
 # Cerrar apps<
 super + q
 		bspc node -{c,k}
@@ -27,7 +27,7 @@ super + ctrl + {m,x,y,z}
 		bspc node -g {marked,locked,sticky,private}
 # Recargar por defecto
 super + alt {r,e}
-			{bspc wm -r;dunstify -i ~/.config/bspwm/scripts/arch.png BSPWMRC RECARGADO,pkill -USR1 -x sxhkd;dunstify -i ~/.config/bspwm/scripts/arch.png SXHKDRC RECARGADO}
+			{bspc wm -r;dunstify -i ~/.local/bin/scripts/arch.png BSPWMRC RECARGADO,pkill -USR1 -x sxhkd;dunstify -i ~/.local/bin/scripts/arch.png SXHKDRC RECARGADO}
 #_________________________Apps__________________________________________
 # ranger/ranger root
 super + {_,shift +} e
@@ -147,10 +147,10 @@ shift + Down
 #__________________________Scripts______________________________________
 # Menu de capturas
 Print {_,shift + }
-		{maim -m 1 captura-pantalla-"$(date '+%y%m%d-%H%M-%S').png",$HOME/.config/bspwm/scripts/menucaptura}
+		{maim -m 1 captura-pantalla-"$(date '+%y%m%d-%H%M-%S').png",$HOME/.local/bin/scripts/menucaptura}
 # Menu de grabacion de video
 super + Print
-		$HOME/.config/bspwm/scripts/menugrabacion
+		$HOME/.local/bin/scripts/menugrabacion
 # Monitor
 super + shift + m
 		lxrandr
