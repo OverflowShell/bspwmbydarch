@@ -107,29 +107,42 @@ format-muted-foreground = ${colors.color1}
 
 [module/battery]
 type = internal/battery
+full-at = 100
 battery = BAT0
 adapter = ADP1
-full-at = 98
+poll-interval = 5
+time-format = %H:%M
+
 format-charging = <animation-charging> <label-charging>
-format-discharging = <animation-discharging> <label-discharging>
+format-discharging = <ramp-capacity> <label-discharging>
+
 label-charging = %percentage%%
+label-charging-foreground = ${colors.color13}
 label-discharging = %percentage%%
-format-full-prefix = " "
-format-full-prefix-foreground = ${colors.color13}
-ramp-capacity-0 =
-ramp-capacity-1 =
-ramp-capacity-2 =
+label-discharging-foreground = ${colors.color13}
+
+label-full = 
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
 ramp-capacity-foreground = ${colors.color13}
-animation-charging-0 =
-animation-charging-1 =
-animation-charging-2 =
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-framerate = 600
 animation-charging-foreground = ${colors.color13}
-animation-charging-framerate = 750
-animation-discharging-0 =
-animation-discharging-1 =
-animation-discharging-2 =
-animation-discharging-foreground = ${colors.color1}
-animation-discharging-framerate = 750
+
+animation-discharging-0= 
+animation-discharging-1= 
+animation-discharging-2= 
+animation-discharging-3= 
+animation-discharging-4= 
+animation-discharging-framerate = 500
+animation-discharging-foreground = ${colors.color13}
 
 [module/temperature]
 type = internal/temperature
@@ -144,7 +157,7 @@ ramp-1 =| 
 ramp-2 =|  
 label-foreground = ${colors.color257}
 format-foreground = ${colors.color257}
-
+format-warn-foreground = ${colors.color257}
 [settings]
 screenchange-reload = true
 ;compositing-background = xor
@@ -259,7 +272,7 @@ label-padding= 0
 label-foreground = ${colors.color14}
 format-foreground = ${colors.color14}
 
-; Separadores ----------------------------
+; Separadores --------------------------------------------------------------
 [module/arribaabre]
 type = custom/text
 content ="└"
@@ -308,7 +321,7 @@ content = "─›"
 label-padding= 0
 content-foreground = ${colors.color10}
 
-;MODULOS SIN USAR-------------------
+;MODULOS SIN USAR---------------------------------------------------------<
 
 [module/carga]
 type = custom/script
