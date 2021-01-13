@@ -51,9 +51,9 @@ padding-left = 2
 padding-right = 2
 module-margin-left = 1
 module-margin-right = 1
-modules-left =bspwm xwindow
+modules-left =guionusuario usuario arribacierra2 bspwm xwindow
 ;modules-center =
-modules-right =arribaabre lluvia frio calor arribacierra abajoabre ram cpu temperature xbacklight pulseaudio abajocierra arribaabre fecha slash hora arribacierra abajoabre battery wifi abajocierra
+modules-right =arribaabre lluvia frio calor arribacierra abajoabre ram cpu temperature xbacklight pulseaudio abajocierra arribaabre fecha slash hora arribacierra abajoabre battery wifi guionwifi
 
 wm-restack = bspwm
 cursor-click = pointer
@@ -61,9 +61,9 @@ cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:16:...%
-label-foreground = ${colors.color6}
-format-foreground = ${colors.color6}
+label = %title:0:14:...%
+label-foreground = ${colors.color2}
+format-foreground = ${colors.color2}
 
 [module/bspwm]
 type = internal/bspwm
@@ -97,7 +97,7 @@ card = intel_backlight
 [module/pulseaudio]
 type = internal/pulseaudio
 format-volume = "|  <label-volume>"
-format-muted = "|  <label-muted>"
+format-muted = "|  <label-muted>"
 label-volume = %percentage%%
 label-muted = %percentage%%
 label-volume-foreground = ${colors.color4}
@@ -112,6 +112,8 @@ adapter = ADP1
 full-at = 98
 format-charging = <animation-charging> <label-charging>
 format-discharging = <animation-discharging> <label-discharging>
+label-charging = %percentage%%
+label-discharging = %percentage%%
 format-full-prefix = " "
 format-full-prefix-foreground = ${colors.color13}
 ramp-capacity-0 =
@@ -142,7 +144,7 @@ ramp-1 =| 
 ramp-2 =|  
 label-foreground = ${colors.color257}
 format-foreground = ${colors.color257}
- 
+
 [settings]
 screenchange-reload = true
 ;compositing-background = xor
@@ -248,6 +250,15 @@ label-foreground = ${colors.color2}
 format-foreground = ${colors.color2}
 click-left = setsid -f st -e calcurse
 
+[module/usuario]
+type = custom/script
+exec = bar_usuario 2>/dev/null
+format = " <label>"
+label = %output%
+label-padding= 0
+label-foreground = ${colors.color14}
+format-foreground = ${colors.color14}
+
 ; Separadores ----------------------------
 [module/arribaabre]
 type = custom/text
@@ -278,6 +289,24 @@ type = custom/text
 content ="/"
 label-padding= 0
 content-foreground = ${colors.color2}
+
+[module/arribacierra2]
+type = custom/text
+content = "┘"
+label-padding= 0
+content-foreground = ${colors.color14}
+
+[module/guionusuario]
+type = custom/text
+content = "‹─"
+label-padding= 0
+content-foreground = ${colors.color14}
+
+[module/guionwifi]
+type = custom/text
+content = "─›"
+label-padding= 0
+content-foreground = ${colors.color10}
 
 ;MODULOS SIN USAR-------------------
 
