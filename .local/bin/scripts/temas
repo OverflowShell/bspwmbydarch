@@ -7,7 +7,7 @@ sed -i "/selected-active-background:/ cselected-active-background: $(xrdb -query
 
 #dunst
 frame_color='"'$(xrdb -query | grep '.color10:' | awk '{print $NF}')'"'
-foreground='"'$(xrdb -query | grep '.color15:' | awk '{print $NF}')'"'
+foreground='"'$(xrdb -query | grep '.color3:' | awk '{print $NF}')'"'
 sed -i '/Bordes De Notificaciones/{n;s/.*/frame_color = '$frame_color'/}' $HOME/.config/dunst/dunstrc
 sed -i '/Letra de Notificaciones/{n;s/.*/foreground = '$foreground'/}' $HOME/.config/dunst/dunstrc
 
