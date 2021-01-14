@@ -5,19 +5,23 @@
 ***** DOY POR HECHO QUE YA TIENES BSPWM INSTALADO PARA SABER COMO SE INSTALA BSPWM PUEDES CHECAR TU MISMO ******
 
 
+0- sudo pacman -S bspwm sxhkd 
+
 1- cd bspwmbydarch/compilar/st
 
 2- sudo make install
 
 3- cp -R bspwmbydarch/config/* ~/.config/
 
-4- sudo chmod u+x ~/.config/bspwm/scripts
+4- cp -R bspwmbydarch/.local/* ~/
 
-5- mkdir -p ~/.local/share/fonts 
+5- sudo chmod +x .local/bin
 
-6- cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+6- mkdir -p ~/.local/share/fonts 
 
-7- cd 
+7- cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+
+8- cd 
 
 ----------------------------------------------------------------------------------------------------------
 
@@ -38,20 +42,7 @@
 
 ------------------------------------------------------------------------
 
-2- sudo pacman -S papirus-icon-theme p7zip unrar zip unzip gzip bzip2 arj lzop alsa-plugins alsa-utils ttf-dejavu ttf-liberation xorg-fonts-type1 ttf-bitstream-vera wmname rofi lxrandr polkit-gnome ueberzug slock fzf wireless_tools redshift telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome chromium --needed --noconfirm
-
-
----------------------------------------------------------------
-LEMONBAR DEPENDENCIAS
---------------------------------------------------------------
-git clone https://github.com/baskerville/xdo.git && git clone https://github.com/baskerville/sutils.git && git clone https://github.com/baskerville/xtitle.git 
-
-a los 3 (xdo,sutils,xtitle) a cada uno el paso 1 y 2 
-
-1- make
-2- sudo make install
-
-
+2- sudo pacman -S zsh-theme-powerlevel10k papirus-icon-theme p7zip unrar zip unzip gzip bzip2 arj lzop alsa-plugins alsa-utils ttf-dejavu ttf-liberation xorg-fonts-type1 ttf-bitstream-vera wmname rofi lxrandr polkit-gnome ueberzug slock fzf wireless_tools redshift telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome chromium --needed --noconfirm
 
 ------------------------------------------------------------
 instalar spotify + adblock
@@ -101,6 +92,7 @@ instalar spotify + adblock
 ########## root ~ fzf personalizacion y configuracion 
 
 1- copiar el contenido de la carpeta Root/fzf en la carpeta /usr/share/fzf 
+
 se debe iniciar pcmanfm en modo root o por terminal con sudo.
 
 
