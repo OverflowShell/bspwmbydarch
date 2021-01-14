@@ -201,7 +201,7 @@ format ="<label>"
 label = %output%
 label-padding = 0
 tail = true
-interval = 180
+interval = 7200
 label-foreground = ${colors.color14}
 format-foreground = ${colors.color14}
 
@@ -212,7 +212,7 @@ format ="<label>"
 label = %output%
 label-padding = 0
 tail = true
-interval = 180
+interval = 7200
 label-foreground = ${colors.color14}
 format-foreground = ${colors.color14}
 
@@ -223,7 +223,7 @@ format ="<label>"
 label = %output%
 label-padding = 0
 tail = true
-interval = 180
+interval = 7200
 label-foreground = ${colors.color14}
 format-foreground = ${colors.color14}
 
