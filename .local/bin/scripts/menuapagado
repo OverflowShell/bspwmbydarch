@@ -15,7 +15,7 @@ cmds="\
    Reiniciar PC	${reb}
    Apagar PC	${shut}"
 
-choice="$(echo "$cmds" | cut -d'	' -f 1 | rofi -p " Menu de apagado" -dmenu -lines 6 -width 16)" || exit 1
+choice="$(echo "$cmds" | cut -d'	' -f 1 | rofi -p " Menu de apagado" -dmenu -lines 6 -width 17)" || exit 1
 
 action=$(echo "$cmds" | grep "^$choice	" | cut -d '	' -f2)
 
