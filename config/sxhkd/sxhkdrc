@@ -155,7 +155,6 @@ super + Print
 super + shift + m
 		lxrandr
 #__________________________Utilidades____________________________________
-#Busqueda Rapida De Archivos Locales
 # Clima 
 alt + F1
 	 st -e sh -c 'clima ; $SHELL'
@@ -174,3 +173,12 @@ alt + F5
 # PDF ATAJOS SXHKDRC
 alt + F12
 			zathura $HOME/.config/sxhkd/atajos/atajos.pdf
+
+#___________________________Polybar____________________________________
+# Ocultar Polybar
+super + alt + space
+	polybar-msg cmd hide 
+	
+# Mostrar Polybar 
+super + ctrl + space 
+	polybar-msg cmd show

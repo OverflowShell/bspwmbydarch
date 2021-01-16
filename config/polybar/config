@@ -51,6 +51,7 @@ padding-left = 2
 padding-right = 2
 module-margin-left = 1
 module-margin-right = 1
+enable-ipc = true
 modules-left =guionusuario usuario arribacierra2 bspwm xwindow
 ;modules-center =
 modules-right =arribaabre lluvia frio calor arribacierra abajoabre ram cpu temperature xbacklight pulseaudio abajocierra arribaabre fecha slash hora arribacierra abajoabre battery wifi guionwifi
@@ -77,7 +78,7 @@ label-occupied-padding = 1
 label-urgent = %name%
 label-urgent-foreground = ${colors.color1}
 label-urgent-padding = 1
-label-empty = 
+label-empty =
 label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 1
 
