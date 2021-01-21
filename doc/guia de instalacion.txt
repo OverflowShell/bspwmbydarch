@@ -42,7 +42,7 @@
 
 ------------------------------------------------------------------------
 
-2- sudo pacman -S zsh-theme-powerlevel10k papirus-icon-theme p7zip unrar zip unzip gzip bzip2 arj lzop alsa-plugins alsa-utils ttf-dejavu ttf-liberation xorg-fonts-type1 ttf-bitstream-vera wmname rofi lxrandr polkit-gnome ueberzug slock fzf wireless_tools redshift telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome chromium --needed --noconfirm
+2- sudo pacman -S zsh-theme-powerlevel10k papirus-icon-theme p7zip unrar zip unzip gzip bzip2 gtk3-nocsdlzop alsa-plugins alsa-utils ttf-dejavu ttf-liberation xorg-fonts-type1 ttf-bitstream-vera wmname rofi lxrandr polkit-gnome ueberzug slock fzf wireless_tools redshift telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome chromium --needed --noconfirm
 
 ------------------------------------------------------------
 instalar spotify + adblock
