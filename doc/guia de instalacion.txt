@@ -9,19 +9,21 @@
 
 1- cd bspwmbydarch/compilar/st
 
-2- sudo make install
+2- sudo make install 
 
-3- cp -R bspwmbydarch/config/* ~/.config/
+3 - cd
 
-4- cp -R bspwmbydarch/.local/* ~/
+4- cp -R bspwmbydarch/config/* ~/.config/
 
-5- sudo chmod +x .local/bin
+5- cp -R bspwmbydarch/.local/* ~/
 
-6- mkdir -p ~/.local/share/fonts 
+6- sudo chmod +x .local/bin
 
-7- cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+7- mkdir -p ~/.local/share/fonts 
 
-8- cd 
+8- cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+
+9- cd 
 
 ----------------------------------------------------------------------------------------------------------
 
@@ -42,7 +44,7 @@
 
 ------------------------------------------------------------------------
 
-2- sudo pacman -S zsh-theme-powerlevel10k papirus-icon-theme p7zip unrar zip unzip gzip bzip2 gtk3-nocsdlzop alsa-plugins alsa-utils ttf-dejavu ttf-liberation xorg-fonts-type1 ttf-bitstream-vera wmname rofi lxrandr polkit-gnome ueberzug slock fzf wireless_tools redshift telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome chromium --needed --noconfirm
+2- sudo pacman -S zsh-theme-powerlevel10k papirus-icon-theme p7zip unrar zip unzip gzip bzip2 gtk3-nocsdlzop alsa-plugins alsa-utils ttf-dejavu ttf-liberation ttf-bitstream-vera wmname rofi lxrandr polkit-gnome ueberzug slock fzf wireless_tools redshift telegram-desktop neofetch calcurse bc pcmanfm xarchiver lxappearance leafpad transmission-gtk nitrogen pavucontrol geany neovim sxiv blueberry ffmpeg maim xclip xdotool mpv unclutter dunst zathura zathura-pdf-mupdf htop zsh zsh-autosuggestions zsh-history-substring-search zsh-completions zsh-syntax-highlighting ranger ttf-joypixels adobe-source-han-sans-jp-fonts adobe-source-han-serif-jp-fonts awesome-terminal-fonts ttf-font-awesome chromium --needed --noconfirm
 
 ------------------------------------------------------------
 instalar spotify + adblock
