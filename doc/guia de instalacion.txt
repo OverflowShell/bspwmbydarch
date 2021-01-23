@@ -40,7 +40,7 @@
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
-1- yay -S ttf-meslo-nerd-font-powerlevel10k picom-ibhagwan-git polybar-git fzf-extras --noconfirm
+1- yay -S gtk3-nocsd-git ttf-meslo-nerd-font-powerlevel10k picom-ibhagwan-git polybar-git fzf-extras --noconfirm
 
 ------------------------------------------------------------------------
 
