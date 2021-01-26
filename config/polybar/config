@@ -149,6 +149,7 @@ label-muted-foreground = ${colors.color1}
 format-volume-foreground = ${colors.color4}
 format-muted-foreground = ${colors.color1}
 format-volume-background = ${colors.background}
+format-muted-background = ${colors.background}
 
 [module/battery]
 type = internal/battery
