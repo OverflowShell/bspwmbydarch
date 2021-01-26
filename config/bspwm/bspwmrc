@@ -21,7 +21,8 @@ picom &
 nitrogen --restore &
 sxhkd &
 pgrep -x sxhkd > /dev/null
-polybar bar &
+polybar bar1 &
+polybar bar2 &
 dunst &
 temas &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
