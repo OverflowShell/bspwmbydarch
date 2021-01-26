@@ -126,7 +126,7 @@ label-empty-background = ${colors.background}
 
 [module/xbacklight]
 type = internal/xbacklight
-format =|  <label> <%percentage%%>
+format ="|  <label> <%percentage%%> "
 label = %percentage%%
 label-foreground = ${colors.color7}
 format-foreground = ${colors.color7}
@@ -199,8 +199,8 @@ format-background = ${colors.background}
 type = internal/temperature
 thermal-zone = 0
 warn-temperature = 60
-format =<ramp> <label> 
-format-warn = <ramp> <label-warn>
+format = "<ramp> <label> " 
+format-warn = "<ramp> <label-warn> "
 label =%temperature%
 label-warn = %temperature%
 ramp-0 =|  
@@ -249,7 +249,7 @@ format-background = ${colors.background}
 [module/ram]
 type = custom/script
 exec = bar_ram 2>/dev/null
-format = "|   <label>"
+format = "|   <label> "
 click-left = st -e htop
 label = %output%
 label-padding = 0
@@ -302,7 +302,7 @@ format-background = ${colors.background}
 [module/cpu]
 type = custom/script
 exec = bar_cpu 2>/dev/null
-format = "|  <label>"
+format = "|  <label> "
 label = %output%
 label-padding = 0
 tail = true
