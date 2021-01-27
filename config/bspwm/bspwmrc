@@ -21,7 +21,8 @@ picom &
 nitrogen --restore &
 sxhkd &
 pgrep -x sxhkd > /dev/null
-polybar bar &
+polybar bar1 &
+polybar bar2 &
 dunst &
 temas &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
@@ -46,7 +47,8 @@ bspc monitor -d  一 二 三 四 五 六 七 八 九 零
 
 bspc config border_width 	2
 bspc config window_gap 		15
-bspc config top_padding		20
+bspc config top_padding		30
+bspc config bottom_padding	30
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true

@@ -37,7 +37,7 @@ super + {_,shift +} r
 		{pcmanfm,sudo -A pcmanfm}	
 # Browser
 super + w
-		chromium
+		firefox
 # Pavucontrol
 super + v
 		pavucontrol
