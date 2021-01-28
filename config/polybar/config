@@ -406,6 +406,12 @@ content = "─›"
 label-padding= 0
 content-foreground = ${colors.color10}
 
+[module/guion]
+type = custom/text
+content = "─"
+label-padding= 0
+content-foreground = ${colors.color10}
+
 
 ;Separador PolyGod ---------------------------------------------------------
 
