@@ -228,7 +228,7 @@ margin-bottom = 0
 [module/wifi]
 type = custom/script
 exec = bar_wifi 2>/dev/null
-format = " <label>"
+format = "  <label>"
 click-left = st -e nmtui
 label = %output% 
 label-padding = 0
