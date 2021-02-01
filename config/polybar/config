@@ -81,25 +81,27 @@ background = ${colors.background-alt}
 foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
-border-size = 0
-border-color = #0000000
 padding-left = 2
 padding-right = 2
 module-margin-left = 0
 module-margin-right = 0
 enable-ipc = true
-modules-left = izq logotitulo der  xwindow
+modules-left = izq logotitulo der xwindow
 modules-center = abajoabre izq lluvia frio calor ram cpu temperature xbacklight pulseaudio der abajocierra
 modules-right = abajoabre izq network-trafico der flechader 
 wm-restack = bspwm
 cursor-click = pointer
 cursor-scroll = ns-resize
 
+border=true
+border-modules-center-size = 1.5
+border-modules-center-color = ${colors.color10}
+
 ;--------------------------------------------------------------------------------
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:30:...%
+label = " %title:0:30:...%"
 label-foreground = ${colors.color3}
 format-foreground = ${colors.color3}
 
