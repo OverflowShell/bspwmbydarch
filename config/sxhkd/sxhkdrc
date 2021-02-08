@@ -37,7 +37,7 @@ super + {_,shift +} r
 		{pcmanfm,sudo -A pcmanfm}	
 # Browser
 super + w
-		firefox
+		google-chrome-stable
 # Pavucontrol
 super + v
 		pavucontrol
@@ -139,11 +139,11 @@ shift + F8
 #Brightness up
 #XF86MonBrightness
 shift + Up
-		xbacklight -inc 10
+		xbacklight -inc 5
 #Brightness down
 #XF86MonBrightnessDown
 shift + Down
-		xbacklight -dec 10
+		xbacklight -dec 5
 #__________________________Scripts______________________________________
 # Menu de capturas
 Print {_,shift + }
