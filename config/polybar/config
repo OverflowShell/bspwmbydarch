@@ -435,6 +435,23 @@ content-foreground = ${colors.background}
 content = ${glyph.gright}
 content-font = 3
 
+[glyph]
+fright = 
+fleft = 
+
+[module/fuegoizq]
+type = custom/text
+content-background = 
+content-foreground = ${colors.background}
+content = ${glyph.fleft}
+content-font = 3
+
+[module/fuegoder]
+type = custom/text
+content-background = 
+content-foreground = ${colors.background}
+content = ${glyph.fright}
+content-font = 3
 
 ;MODULOS SIN USAR---------------------------------------------------------<
 
