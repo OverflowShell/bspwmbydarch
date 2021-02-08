@@ -56,7 +56,7 @@ module-margin-right = 0
 enable-ipc = true
 modules-left = flechaizq izq usuario der arribacierra2 
 modules-center = arribaabre izq bspwm der arribacierra
-modules-right = abajoabre izq hora slash fecha der guion izq battery wifi der flechader
+modules-right = arribaabre2 izq hora slash fecha der guion izq battery wifi der flechader
 wm-restack = bspwm
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -364,6 +364,12 @@ type = custom/text
 content ="└"
 label-padding= 0
 content-foreground = ${colors.color6}
+
+[module/arribaabre2]
+type = custom/text
+content ="└"
+label-padding= 0
+content-foreground = ${colors.color10}
 
 [module/arribacierra]
 type = custom/text
